@@ -176,6 +176,7 @@ function Chessboard() {
       const y = Math.abs(Math.ceil((e.clientY - Board.offsetTop - 800) / 100));
 
       const currentPiece = pieces.find((p) => p.x === gridX && p.y === gridY);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const attackPiece = pieces.find((p) => p.x === x && p.y === y);
 
       if (currentPiece) {
